@@ -1,4 +1,3 @@
-/* Header */
 .header {
     display: grid;
     grid-template-columns: 1fr min-content 1fr;
@@ -27,7 +26,6 @@
     line-height: 1.35;
 }
 
-/* Cover */
 .cover {
     position: relative;
     padding: 165px 50px 50px;
@@ -212,7 +210,6 @@
     line-height: 1.2;
 }
 
-/* Footer */
 .footer {
     display: grid;
     grid-template-columns: 1fr min-content 1fr;
