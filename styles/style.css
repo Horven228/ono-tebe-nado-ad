@@ -1,4 +1,4 @@
-/* ОБЩЕЕ */
+/* === ОБЩЕЕ === */
 body {
   min-width: 1200px;
   font-family: 'Raleway', sans-serif;
@@ -6,16 +6,15 @@ body {
   color: #000;
 }
 
-/* Оверлей */
+/* === Оверлей === */
 .overlay {
   position: absolute;
   inset: 0;
-  background: #000;
-  opacity: 0.6;
+  background-color: rgba(0, 0, 0, 0.6);
   z-index: 1;
 }
 
-/* HEADER */
+/* === HEADER === */
 .header {
   display: grid;
   grid-template-columns: 1fr auto 1fr;
@@ -52,7 +51,7 @@ body {
 
 .header .address { justify-self: end; }
 
-/* COVER */
+/* === COVER === */
 .cover {
   position: relative;
   background: url("../images/cover.jpg") center/cover no-repeat;
@@ -105,7 +104,7 @@ body {
   cursor: pointer;
 }
 
-/* LOTS — ТОЧНО КАК НА КАРТИНКЕ "555" */
+/* === LOTS — ТОЧНО КАК НА ТВОЕЙ КАРТИНКЕ "555" === */
 .lots {
   padding: 0 24px 180px;
 }
@@ -128,8 +127,7 @@ body {
 }
 
 .lots__card-list-item {
-  flex: 0 1 430px;   /* фиксированная ширина */
-  width: 430px;
+  flex: 1 0 430px;
 }
 
 .card-link {
@@ -142,17 +140,17 @@ body {
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;   /* текст внизу */
-  height: 450px;               /* вытянутая форма вниз */
-  padding: 51px 40px;
+  justify-content: flex-end;      /* ← текст строго внизу */
+  height: 450px;                  /* ← фиксированная высота */
+  padding: 51px 40px 51px;        /* ← одинаковые отступы сверху и снизу */
   background-size: cover;
   background-position: center;
-  color: #fff;                 /* белый текст */
+  color: #fff;
 }
 
-.card_type_film     { background-image: url("../images/card-lot-01.jpg"); }
-.card_type_book     { background-image: url("../images/card-lot-02.jpg"); }
-.card_type_picture  { background-image: url("../images/card-lot-03.jpg"); }
+.card_type_film    { background-image: url("../images/card-lot-01.jpg"); }
+.card_type_book    { background-image: url("../images/card-lot-02.jpg"); }
+.card_type_picture { background-image: url("../images/card-lot-03.jpg"); }
 
 .card__title {
   font-weight: 700;
@@ -178,9 +176,10 @@ body {
   margin-top: 30px;
   font-size: 20px;
   text-decoration: underline;
+  display: inline-block;
 }
 
-/* ABOUT */
+/* === ABOUT === */
 .about {
   display: grid;
   grid-template-columns: 430px 1fr;
@@ -212,7 +211,7 @@ body {
 .about__text { font-size: 20px; line-height: 24px; }
 .about__text p + p { margin-top: 24px; }
 
-/* FOOTER */
+/* === FOOTER === */
 .footer {
   display: grid;
   grid-template-columns: 1fr auto 1fr;
