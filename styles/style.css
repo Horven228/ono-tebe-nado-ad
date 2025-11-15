@@ -179,7 +179,6 @@
     font-size: 20px;
 }
 
-/* About */
 .about {
     display: grid;
     grid-template-columns: 430px 1fr;
